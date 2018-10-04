@@ -1,6 +1,6 @@
 {% set chef_modules = ['_bundle', 'auth', 'compute', 'sql', 'storage', 'spanner', 'container', 'dns', 'iam'] %}
 {% set puppet_modules = ['_bundle', 'auth', 'bigquery', 'compute', 'sql', 'storage', 'spanner', 'container', 'dns', 'pubsub', 'resourcemanager'] %}
-{% set puppet_no_release = ['bigquery'] %}
+{% set puppet_no_release = ['bigquery', '_bundle'] %}
 {% macro names_as_list(repo, names) -%}
 {% for name in names %}
 build/{{repo}}/{{name}} 
