@@ -87,7 +87,6 @@ module Api
 
         check_optional_property :path, String
         check_optional_property :resource_inside_response, :boolean
-        
       end
     end
 
